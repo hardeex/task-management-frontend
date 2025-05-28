@@ -1,0 +1,193 @@
+ :root {
+            /* Primary Brand Colors - Change these to update the entire theme */
+            --task-primary: #8b5cf6;     /* Purple-500 */
+            --task-primary-dark: #7c3aed; /* Purple-600 */
+            --task-primary-light: #a78bfa; /* Purple-400 */
+            --task-secondary: #3b82f6;   /* Blue-500 */
+            --task-secondary-dark: #2563eb; /* Blue-600 */
+            --task-secondary-light: #60a5fa; /* Blue-400 */
+            
+            /* Gradient Combinations */
+            --task-gradient: linear-gradient(135deg, var(--task-secondary-dark) 0%, var(--task-primary-dark) 100%);
+            --task-gradient-hover: linear-gradient(135deg, var(--task-secondary) 0%, var(--task-primary) 100%);
+            --task-gradient-light: linear-gradient(135deg, var(--task-secondary-light) 0%, var(--task-primary-light) 100%);
+            
+            /* Status Colors */
+            --task-success: #10b981;
+            --task-warning: #f59e0b;
+            --task-error: #ef4444;
+            --task-info: #06b6d4;
+            
+            /* Neutral Colors */
+            --task-gray-50: #f9fafb;
+            --task-gray-100: #f3f4f6;
+            --task-gray-200: #e5e7eb;
+            --task-gray-300: #d1d5db;
+            --task-gray-600: #4b5563;
+            --task-gray-700: #374151;
+            --task-gray-800: #1f2937;
+            --task-gray-900: #111827;
+        }
+
+        /* Reusable Component Classes */
+        .task-gradient-bg {
+            background: var(--task-gradient);
+        }
+        
+        .task-gradient-text {
+            background: var(--task-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        
+        .task-logo {
+            background: var(--task-gradient);
+        }
+        
+        /* Button Styles */
+        .task-btn-primary {
+            background: var(--task-gradient);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .task-btn-primary:hover {
+            background: var(--task-gradient-hover);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+        
+        .task-btn-secondary {
+            border: 2px solid var(--task-gray-300);
+            color: var(--task-gray-700);
+            background: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .task-btn-secondary:hover {
+            border-color: var(--task-primary-dark);
+            color: var(--task-primary-dark);
+        }
+        
+        .task-btn-white {
+            background: white;
+            color: var(--task-primary-dark);
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .task-btn-white:hover {
+            background: var(--task-gray-100);
+        }
+        
+        .task-btn-outline {
+            border: 2px solid var(--task-primary-dark);
+            color: var(--task-primary-dark);
+            background: transparent;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .task-btn-outline:hover {
+            background: var(--task-primary-dark);
+            color: white;
+        }
+        
+        /* Feature Card Icons */
+        .task-icon-purple { background: linear-gradient(135deg, var(--task-primary) 0%, #ec4899 100%); }
+        .task-icon-blue { background: linear-gradient(135deg, var(--task-secondary) 0%, #06b6d4 100%); }
+        .task-icon-green { background: linear-gradient(135deg, var(--task-success) 0%, #059669 100%); }
+        .task-icon-yellow { background: linear-gradient(135deg, var(--task-warning) 0%, #f97316 100%); }
+        .task-icon-red { background: linear-gradient(135deg, var(--task-error) 0%, #ec4899 100%); }
+        .task-icon-indigo { background: linear-gradient(135deg, #6366f1 0%, var(--task-primary) 100%); }
+        
+        /* Card Styles */
+        .task-card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .task-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .task-card-featured {
+            background: var(--task-gradient);
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.25);
+        }
+        
+        /* Navigation Link Styles */
+        .task-nav-link {
+            color: var(--task-gray-700);
+            transition: color 0.2s ease;
+            text-decoration: none;
+        }
+        
+        .task-nav-link:hover {
+            color: var(--task-primary-dark);
+        }
+        
+        /* Status Colors for Tasks */
+        .task-status-completed { 
+            background-color: #f0fdf4; 
+            border-left: 4px solid var(--task-success); 
+        }
+        .task-status-in-progress { 
+            background-color: #eff6ff; 
+            border-left: 4px solid var(--task-secondary); 
+        }
+        .task-status-pending { 
+            background-color: #fffbeb; 
+            border-left: 4px solid var(--task-warning); 
+        }
+        
+        /* Responsive Text Sizes */
+        .task-hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Utility Classes */
+        .task-text-primary { color: var(--task-primary-dark); }
+        .task-text-secondary { color: var(--task-secondary-dark); }
+        .task-bg-primary { background-color: var(--task-primary); }
+        .task-bg-secondary { background-color: var(--task-secondary); }
+        .task-border-primary { border-color: var(--task-primary-dark); }
+        
+        /* Glass morphism effect */
+        .task-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
