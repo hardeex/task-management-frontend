@@ -12,17 +12,17 @@
 <!---time--->
 @include('components.time')
 
+   <!--- How it works --->
+   @include('components.how-it-works')
+
 
         <!-- Feature Section -->
     @include('components.features')
+
+
        <!--- integration -->
    @include('components.integration')
 
-  
-
-
-   <!--- How it works --->
-   @include('components.how-it-works')
     
    <!-- Pricing Section -->
    @include('components.pricing')

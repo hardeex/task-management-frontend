@@ -8,6 +8,16 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('pages.welcome');
+    }
+
+    public function gettingStarted()
+    {
+        return view('pages.getting-started');
+    }
+
+    public function about()
+    {
+        return view('pages.about');
     }
 }

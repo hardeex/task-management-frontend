@@ -48,6 +48,8 @@
 
     @yield('content')
 
+       <!-- Scripts -->
+    @stack('scripts')
 
    <!---footer-->
    @include('components.footer')
