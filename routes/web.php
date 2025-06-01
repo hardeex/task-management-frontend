@@ -26,10 +26,15 @@ Route::get('/forgot-password', [AuthController::class, 'forgotPassword'])->name(
 Route::post('/reset-password', [AuthController::class, 'resetPassword'])->name('password.request');
 Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
 Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+Route::get('/settings', [AuthController::class, 'settings'])->name('setting');
 
 
 
 // task management routes
-Route::get('/create-tasks', [TasksController::class, 'createTask'])->name('create-task');
+Route::get('/tasks', [TasksController::class, 'tasks'])->name('create-task');
 Route::get('/create-workspace', [TasksController::class, 'createWorkspace'])->name('workspace');
-Route::get('/invite-team', [TasksController::class, 'inviteTeam'])->name('invite-team');
+Route::get('/invite-team', [TasksController::class, 'Team'])->name('invite-team');
+Route::get('/create-project', [TasksController::class, 'createProject'])->name('create-project');
+Route::get('/projects-details', [TasksController::class, 'projects'])->name('projects');
+Route::get('/calendar', [TasksController::class, 'calendar'])->name('calendar');
+Route::get('/report', [TasksController::class, 'reports'])->name('report');

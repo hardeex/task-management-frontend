@@ -27,20 +27,12 @@
 
         <!-- Main Dashboard Content -->
         <main class="p-4 lg:p-6">
-            <!-- Stats Cards -->
-           @include('dashboard.stats')
+         
 
-            <!-- Charts and Recent Activity -->           
-            @include('dashboard.charts')
+            <!-- Create project -->           
+            @include('projects.add')
 
-            <!-- Recent Tasks and Projects -->
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                <!-- Recent Tasks -->
-               @include('dashboard.recent-tasks')
-
-                <!-- Active Projects -->
-                @include('dashboard.active-tasks')
-            </div>
+          
         </main>
     </div>
 

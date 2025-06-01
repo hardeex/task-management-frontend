@@ -1,4 +1,4 @@
-  <header class="bg-white shadow-sm border-b border-gray-200 p-4 lg:p-6">
+ <header class="bg-white shadow-sm border-b border-gray-200 p-4 lg:p-6">
             <div class="flex items-center justify-between">
                 <div class="lg:ml-0 ml-12">
                     <h1 class="text-2xl font-bold text-gray-800">Dashboard</h1>
@@ -18,12 +18,20 @@
                         <i class="fas fa-bell text-xl"></i>
                         <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">3</span>
                     </button>
+
+                    <!---- create projects-->
+                     <a href="{{route('create-project')}}"  class="brand-gradient text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                        <i class="fas fa-plus mr-2"></i>
+                        <span class="hidden md:inline"> Create New Project</span>
+                     </a>
                     
                     <!-- Quick Add Task -->
-                    <button class="brand-gradient text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                    <button id="add-task-btn" class="brand-gradient text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity">
                         <i class="fas fa-plus mr-2"></i>
                         <span class="hidden md:inline">Add Task</span>
                     </button>
                 </div>
             </div>
         </header>
+
+        @include('tasks.create')

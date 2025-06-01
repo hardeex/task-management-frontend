@@ -13,31 +13,31 @@
         
         <nav class="p-4">
             <ul class="space-y-2">
-                <li><a href="#" class="sidebar-active flex items-center space-x-3 p-3 rounded-lg transition-colors">
+                <li><a href="{{route('dashboard')}}" class="sidebar-active flex items-center space-x-3 p-3 rounded-lg transition-colors">
                     <i class="fas fa-chart-pie w-5"></i>
                     <span>Dashboard</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('create-task')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-tasks w-5"></i>
                     <span>Tasks</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('projects')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-folder w-5"></i>
                     <span>Projects</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('invite-team')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-users w-5"></i>
                     <span>Team</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('calendar')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-calendar w-5"></i>
                     <span>Calendar</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('report')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-chart-bar w-5"></i>
                     <span>Reports</span>
                 </a></li>
-                <li><a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
+                <li><a href="{{route('setting')}}" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-100 transition-colors">
                     <i class="fas fa-cog w-5"></i>
                     <span>Settings</span>
                 </a></li>
